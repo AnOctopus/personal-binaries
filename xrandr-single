@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+xrandr --auto --output HDMI-1-0 --off --output eDP-1;
+sleep 1;
+
+pkill polybar
+sleep 1;
+
+MONITOR=eDP-1 polybar main &

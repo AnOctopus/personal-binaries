@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+ARCHIVE=$1
+BASENAME=${ARCHIVE:r}
+
+TOP=$(unzip -l "$ARCHIVE" | awk 'NR>3 {print $4}' | cut -d/ -f1 | sort -u | grep -v '^$')
+TOP_COUNT=$(echo "$TOP" | wc -l)
+
+if [[ $TOP_COUNT -eq 1 ]]; then
+    unzip "$ARCHIVE"
+else
+    mkdir -p "$BASENAME"
+    unzip "$ARCHIVE" -d "$BASENAME"
+fi

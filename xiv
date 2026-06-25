@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+XL_SECRET_PROVIDER=FILE XIVLauncher.Core run --branch=stable --arch=x86_64 --command=xivlauncher dev.goats.xivlauncher

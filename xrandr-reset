@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+xrandr --auto --output HDMI-1-0 --off --output eDP-1;
+sleep 1;
+xrandr --auto --output eDP-1 --right-of HDMI-1-0;
+sleep 1;
+
+# pkill polybar
+# while ! xrandr | grep -q "HDMI-1-0 connected"; do
+#     sleep 0.5
+# done
+# MONITOR=eDP-1 polybar main &
+# MONITOR=HDMI-1-0 polybar secondary &

@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/amanda/.steam/steam/steamapps/common/SteamLinuxRuntime_sniper/pressure-vessel/bin/steam-runtime-launch-client --bus-name=com.steampowered.App2552430 -- wine /home/amanda/.local/share/Steam/steamapps/compatdata/2552430/pfx/drive_c/ProgramData/Archipelago/ArchipelagoLauncherDebug.exe -- "KH1 Client"
